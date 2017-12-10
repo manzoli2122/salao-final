@@ -52,6 +52,24 @@ return [
             'prefix' => '',
             'strict' => true,
             'engine' => null,
+            'options' => [PDO::ATTR_EMULATE_PREPARES => true],
+        ],
+
+        
+        'secao' => [
+            'driver' => 'mysql',
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => 'id3595866_secao',
+            'username' =>'id3595866_secao',
+            'password' => 'secao',
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+            'options' => [PDO::ATTR_EMULATE_PREPARES => true],
         ],
 
         'pgsql' => [

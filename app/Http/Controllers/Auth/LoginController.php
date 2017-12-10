@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
+use Illuminate\Http\Request;
 class LoginController extends Controller
 {
     /*
@@ -17,6 +17,21 @@ class LoginController extends Controller
     | to conveniently provide its functionality to your applications.
     |
     */
+
+    /**
+     * The user has been authenticated.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  mixed  $user
+     * @return mixed
+     */
+    protected function authenticated(Request $request, $user)
+    {
+        session(['users' => $user->name ]);
+        //dd($user);
+    }
+
+
 
     use AuthenticatesUsers;
 
