@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Salão</title>
+  <title>Salão {{$title or '' }}</title>
   <link rel="shortcut icon" type="image/x-icon" href="/images/salao-icon.ico">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -46,7 +46,7 @@
             </a>
             <ul class="dropdown-menu">             
               <li class="user-header">
-                <img src="{{url('dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
+                <!--img src="{{url('dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image"-->
                 <p>{{session('users')}}<small>Membro desde de {{auth()->user()->created_at->format('d/m/Y')}}</small></p>
               </li>             
               <!-- Menu Footer-->
@@ -319,7 +319,7 @@
 <script>
   $.widget.bridge('uibutton', $.ui.button);
 </script>
- @yield('java-script')
+ @yield('script')
 
 </body>
 </html>

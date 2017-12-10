@@ -1,7 +1,5 @@
 @extends('templates.templateMaster')
 
-@section('contentMaster')
-
 
 @section('css')
 <style>
@@ -13,6 +11,20 @@
     }
 </style>
 @endsection
+
+
+
+@section('titulo-page')
+Bem Vindo ao Sistema do Salão Espaço Vip
+@endsection
+
+
+@section('small-titulo-page')
+É um prazer Servir!!!!
+@endsection
+
+
+@section('contentMaster')
 
 <section class="row text-center Listagens">
         
