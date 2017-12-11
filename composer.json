@@ -11,7 +11,7 @@
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "^5.4.0",
-        "manzoli2122/salao-gerencial": "dev-master"
+        "manzoli2122/salao-gerencial": "1.5.0"
     },
     "require-dev": {
         "filp/whoops": "~2.0"
