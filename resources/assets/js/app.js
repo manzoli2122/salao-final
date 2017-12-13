@@ -1,22 +1,24 @@
+window.exibeMsgGlobais = function() {
+    // Exibe a mensagem de sucesso caso exista
+    if ($('#_success').length > 0 && $('#_success').val() !== '') {
+        toastSucesso($('#_success').val());
+        $('#_success').val('');
+    }
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+    // Exibe as mensagens de erro caso existam
+    var contadorErro = 0;
+    var MAX_MSG_ERRO = 5;
+    $('input[name^="_errors"]').each(function() {
+        if ($(this).val() !== '') {
+            if (contadorErro < MAX_MSG_ERRO) {
+                toastErro($(this).val());
+                $(this).val('');
+                contadorErro++;
+            }
+        }
+    });
+}
 
-require('./bootstrap');
-
-window.Vue = require('vue');
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
-const app = new Vue({
-    el: '#app'
+$(document).ready(function() {
+    exibeMsgGlobais();
 });

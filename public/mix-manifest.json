@@ -1,4 +1,9 @@
 {
-    "/js/vendor.js": "/js/vendor.js?id=d64af93da846326f6774",
-    "/css/vendor.css": "/css/vendor.css?id=aca9a0d7ca7ca52122e3"
+    "/js/vendor.js": "/js/vendor.js?id=c0d4abca33974d175b96",
+    "/js/datatables-padrao.js": "/js/datatables-padrao.js?id=31f40b4e09e93a1b8ae5",
+    "/css/vendor.css": "/css/vendor.css?id=65c8683d216d1e8c0f84",
+    "/css/template.css": "/css/template.css?id=7cc8c6553ecd631cc3cb",
+    "/js/template.js": "/js/template.js?id=c360ce724e7a866751c2",
+    "/js/app.js": "/js/app.js?id=626bdd1985504e93456f",
+    "/css/app.css": "/css/app.css?id=22cafee18a84188b4d0e"
 }

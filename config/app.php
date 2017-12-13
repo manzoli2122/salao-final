@@ -13,7 +13,30 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Salão'),
+
+
+
+
+    //TAMPLATES
+    'templateMaster' => 'templates.templateMaster',
+     
+    'templateMasterContent' => 'content',
+     
+    'templateMasterContentTitulo' => 'content-header' ,
+     
+    'templateMasterContentTituloSmall' => 'small-titulo-page' ,
+
+    'templateMasterMenuLateral' => 'menuLateral' , 
+     
+    'templateMasterScript' => 'script' ,
+     
+    'templateMasterCss' => 'styles' ,
+         
+
+
+
+    
 
     /*
     |--------------------------------------------------------------------------
@@ -65,7 +88,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Sao_Paulo',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +101,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'pt_BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -182,6 +205,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
+        Yajra\Datatables\DatatablesServiceProvider::class,
+
     ],
 
     /*
@@ -232,7 +258,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'AAL'   => Manzoli2122\AAL\AALFacade::class,
-
+        'Datatables' => Yajra\Datatables\Facades\Datatables::class,
     ],
 
 ];

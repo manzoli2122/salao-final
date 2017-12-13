@@ -1,0 +1,37 @@
+.invisivel {
+    display: none;
+}
+
+.align-center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.align-right {
+    text-align: right;
+    vertical-align: middle;
+}
+
+.bordas-redondas-sombra {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    box-shadow: -4px 4px 5px;
+}
+
+.alert-default {
+    color: #333333;
+    background-color: #c0c0c0;
+}
+
+input[pesquisavel] {
+    width: 100%;
+}
+
+.input-full {
+    max-width: 100% !important;
+}
+
+.width-full {
+    width: 100%;
+}

@@ -3,11 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Salão | Log in</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title> {{ config('app.name', 'Salão') }}:: Log in</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="{{url( mix('/css/vendor.css'))}}"> 
- 
-    <link rel="stylesheet" href="{{url('/plugins/iCheck/square/green.css')}}">
+    
+  
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/images/salao-icon.ico">
+    <link href="{{ mix('css/vendor.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ mix('css/template.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css"/>
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
     <style> 
       body {
@@ -64,19 +72,10 @@
 </div>
 <!-- /.login-box -->
 
+  <script src="{{ mix('js/vendor.js') }}" type="text/javascript"></script>
+    <script src="{{ mix('js/template.js') }}" type="text/javascript"></script>
+    <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
 
-<script src="{{url( mix('/js/vendor.js'))}}"></script>
-<!-- iCheck -->
-<script src="{{url('/plugins/iCheck/icheck.min.js')}}"></script>
-<script>
-  $(function () {
-    $('input').iCheck({
-      checkboxClass: 'icheckbox_square-green',
-      radioClass: 'iradio_square-green',
-      increaseArea: '20%' // optional
-    });
-  });
-</script>
 
 </body>
 </html>
