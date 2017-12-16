@@ -39,16 +39,17 @@ return [
     //TAMPLATES
     'templateMaster' => 'templates.templateMaster',
     
-        'templateMasterContent' => 'contentMaster',
+   'templateMasterContent' => 'content',
     
-        'templateMasterContentTitulo' => 'titulo-page' ,
+   'templateMasterContentTitulo' => 'content-header' ,
     
-        'templateMasterMenuLateral' => 'menuLateral' , 
-    
-        'templateMasterScript' => 'script' ,
-    
-        'templateMasterCss' => 'css' ,
+   'templateMasterContentTituloSmall' => 'small-titulo-page' ,
 
+   'templateMasterMenuLateral' => 'menuLateral' , 
+    
+   'templateMasterScript' => 'script' ,
+    
+   'templateMasterCss' => 'styles' ,
 
 
 ];

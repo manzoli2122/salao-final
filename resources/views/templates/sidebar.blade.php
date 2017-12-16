@@ -10,7 +10,7 @@
           @permissao('clientes')
             <li>
               <a href="{{ route('clientes.index')}}">
-                <i class="fa fa-id-card"></i> <span>Clientes</span>
+                <i class="fa fa-users"></i> <span>Clientes</span>
               </a>
             </li>
           @endpermissao
@@ -18,7 +18,7 @@
 
 
         @if(Route::getRoutes()->hasNamedRoute('atendimentos.index'))
-          @permissao('caixa')
+          @permissao('atendimentos')
             <li>
               <a href="{{ route('atendimentos.index')}}">
                 <i class="fa fa-id-card"></i> <span>Atendimentos de Hoje</span>
@@ -94,7 +94,7 @@
       @if(Route::getRoutes()->hasNamedRoute('funcionarios.index'))
         @permissao('funcionarios')
           <li>
-            <a href="{{ route('funcionarios.index')}}"><i class="fa fa-id-card"></i> <span>Funcionarios</span></a>
+            <a href="{{ route('funcionarios.index')}}"><i class="fa fa-users"></i> <span>Funcionarios</span></a>
           </li>
         @endpermissao
       @endif
@@ -104,6 +104,7 @@
 
 
       @if(Route::getRoutes()->hasNamedRoute('gerencialAtendimentos.index'))
+        @permissao('gerencial') 
         <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Gerencial</span>
@@ -113,28 +114,29 @@
           </a>
           <ul class="treeview-menu">
            @if(Route::getRoutes()->hasNamedRoute('gerencialAtendimentos.index'))
-            @permissao('usuarios')
+            
               <li class="active">
                 <a  href="{{ route('gerencialAtendimentos.index') }}"> <span class="sr-only">(current)</span>
                   <i class="fa fa-id-card" aria-hidden="true"></i>
                   Atendimentos
                 </a>
               </li>
-            @endpermissao
+           
            @endif
           @if(Route::getRoutes()->hasNamedRoute('gerencial.relatorio.geral'))
-            @permissao('usuarios')
+           
               <li class="active">
                 <a  href="{{ route('gerencial.relatorio.geral') }}" target="_blank"> <span class="sr-only">(current)</span>
                   <i class="fa fa-id-card" aria-hidden="true"></i>
                   Relatorio Geral
                 </a>
               </li>
-            @endpermissao
+           
            @endif
             
           </ul>
         </li>
+         @endpermissao
       @endif
 
 
@@ -201,7 +203,7 @@
         @endif
          
         <li class="header">LABELS</li>
-
+    
         @yield('menuLateral')
                
       </ul>

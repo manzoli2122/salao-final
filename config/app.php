@@ -25,7 +25,7 @@ return [
      
     'templateMasterContentTitulo' => 'content-header' ,
      
-    'templateMasterContentTituloSmall' => 'small-titulo-page' ,
+    'templateMasterContentTituloSmall' => 'small-content-header' ,
 
     'templateMasterMenuLateral' => 'menuLateral' , 
      
@@ -101,7 +101,7 @@ return [
     |
     */
 
-    'locale' => 'pt_BR',
+    'locale' => 'pt-br',
 
     /*
     |--------------------------------------------------------------------------

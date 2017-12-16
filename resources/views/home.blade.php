@@ -24,7 +24,7 @@ Bem Vindo ao Sistema do Salão Espaço Vip
 @endsection
 
 
-@section('contentMaster')
+@section('content')
 
 <section class="row text-center Listagens">
         
@@ -35,7 +35,7 @@ Bem Vindo ao Sistema do Salão Espaço Vip
                     <p> Para cadastro de <b> Produto, Serviço ou Operadora de cartão</b> selecionar o Cadastro no menu lateral da sua tela </p>
                     
                     <br>
-                    <p> Para recebimento de <b>Serviços anteriores</b> acesse o clientes e no menu Lateral, caso esteja a dívida cadastrada no sistema, aparecerá a opção receber dívida. </p>
+                    <p> Para recebimento de <b>Serviços anteriores</b> acesse o clientes e no menu Lateral, caso esteja a dívida cadastrada no sistema, aparecerá o valor da dívida. </p>
                     
                     <br><br>
 			
@@ -137,7 +137,7 @@ Bem Vindo ao Sistema do Salão Espaço Vip
 
 
 
-@section('script')
+@push('script')
 
 <!--script src="/js/Chart.js"></script>
 
@@ -246,4 +246,4 @@ Bem Vindo ao Sistema do Salão Espaço Vip
 
 
 
-@endsection
+@endpush
